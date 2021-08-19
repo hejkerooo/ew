@@ -1,0 +1,10 @@
+.github
+node_modules
+dist
+.env.example
+.env
+.gitignore
+README.md
+.prettierrc
+.build-check-rules.yml
+docker-compose.yml

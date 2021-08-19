@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
+  api_e2e:
+    container_name: api_e2e
+    build:
+      context: .
+      dockerfile: ci/Dockerfile.e2e
+    environment:
+      - REDIS_PORT=6379
+      - REDIS_HOST=redis
+      - PORT=3000

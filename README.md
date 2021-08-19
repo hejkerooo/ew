@@ -1,10 +1,10 @@
 ## Requirements
-- NodeJS Version >= 14\
+- NodeJS Version >= 14
 - Redis
 
 ## Run in docker
 
-Run `docker-compose build -f docker-compose.yml api`  
+Run `$ docker-compose build -f docker-compose.yml api`  
 Run `$ docker-compose up -d`
 
 ## Run without docker
